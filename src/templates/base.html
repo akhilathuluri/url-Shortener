@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <title>Kirr.co | {% block title %} Shorten that url{% endblock title %}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/5.3/examples/cover/cover.css" >
+    {% block styles %}
+    <style>
+    body {
+      background-color: #226268;
+
+    }
+
+    .btn-link {
+      color: #50dfec;
+      text-shadow: none;
+    }
+    .btn-link:hover {
+      color: #000000;
+    }
+    </style>
+    {% endblock styles %}
+</head>
+
+<body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+           
+            
+
+          <div class="inner cover">
+             {% block content %}
+
+            {% endblock content %}
+            
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+</body>
+</html>
